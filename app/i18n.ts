@@ -112,7 +112,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     projectsPage: {
       tag: "PROYECTOS",
-      title: "Arquitectura backend en producción",
+      title: "Proyectos destacados y realizados",
       intro:
         "Incluye proyectos con enlaces públicos cuando aplica y experiencias profesionales en entornos privados.",
       techUsedLabel: "Tecnologías usadas",
@@ -135,7 +135,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.georoad.name,
           shortDescription:
-            "Aplicación de escritorio enfocada en simulación, análisis y recomendaciones de sistemas geotérmicos enterrados en el pavimento.",
+            "Aplicación de escritorio enfocada en simulación, análisis y recomendaciones de sistemas geotérmicos enterrados en el pavimento. He sido participe de este proyecto desde su concepción, colaborando en el diseño de la arquitectura (Model - View - Presenter), Strategy pattern entre otras decisiones técnicas, desarrollo de la API con FastAPI y la integración con la aplicación de escritorio usando PyQt5.",
           technologies: sharedProjects.georoad.technologies,
           problemSolved:
             "Centraliza cálculos, validaciones y sistema de recomendación según entorno de diferentes modelos geotérmicos en una herramienta mantenible, reduciendo tiempos de análisis manual y mejorando la trazabilidad técnica del proceso mostrando gráficas renderizadas de resultados en 2D y 3D.",
@@ -186,7 +186,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     projectsPage: {
       tag: "PROJECTS",
-      title: "Production-ready backend architecture",
+      title: "Featured and past projects",
       intro:
         "Includes projects with public links when available and professional experience in private environments.",
       techUsedLabel: "Technologies used",
@@ -208,7 +208,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.georoad.name,
           shortDescription:
-            "Desktop application focused on simulation, analysis, and recommendation of geothermal systems embedded in pavement.",
+            "Desktop application focused on simulation, analysis, and recommendation of geothermal systems embedded in pavement. I have been involved in this project since its inception, collaborating on the design of the architecture (Model - View - Presenter), Strategy pattern among other technical decisions, development of the API with FastAPI and integration with the desktop application using PyQt5.",
           technologies: sharedProjects.georoad.technologies,
           problemSolved:
             "It centralizes calculations, validations, and recommendation logic for different geothermal models in a maintainable tool, reducing manual analysis time and improving technical traceability with rendered 2D and 3D result charts.",

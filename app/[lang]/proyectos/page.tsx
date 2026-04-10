@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Dictionary, Locale, dictionaries, isValidLocale } from "../../i18n";
 
@@ -16,9 +17,19 @@ function getDictionary(lang: string): Dictionary {
 export default async function ProjectsPage({ params }: ProjectsProps) {
   const { lang } = await params;
   const localeCopy = getDictionary(lang);
+  const backLabel = lang === "es" ? "Volver al menu principal" : "Back to main menu";
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-5 pb-12 pt-8 sm:px-6">
+      <Link
+        href={`/${lang}`}
+        aria-label={backLabel}
+        className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-[#c8d8d5] bg-white px-3 py-1.5 text-sm font-medium text-[color:var(--muted)] transition hover:border-[color:var(--accent)] hover:text-[color:var(--foreground)]"
+      >
+        <span aria-hidden="true">&larr;</span>
+        <span>{lang === "es" ? "Menu" : "Menu"}</span>
+      </Link>
+
       <header className="mb-8">
         <p className="font-mono text-xs tracking-[0.22em] text-[color:var(--accent)]">
           {localeCopy.projectsPage.tag}
