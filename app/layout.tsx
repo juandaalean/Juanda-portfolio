@@ -14,7 +14,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Backend | Tu Nombre",
+  title: "Portfolio Backend | Juan David Alean Medina",
   description:
     "Portfolio profesional de desarrollador backend con proyectos, APIs en vivo y stack técnico.",
 };
