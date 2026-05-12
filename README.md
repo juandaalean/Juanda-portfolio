@@ -10,6 +10,8 @@ Este proyecto muestra:
 - Seccion de proyectos con enfoque tecnico.
 - Estructura simple para personalizacion rapida.
 
+URL de mi portfolio: https://juanda-portfolio.vercel.app/es
+
 ## Stack
 
 - Next.js
