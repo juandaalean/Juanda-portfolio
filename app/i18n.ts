@@ -57,26 +57,31 @@ export type Dictionary = {
 
 const sharedProjects = {
   projectManager: {
-    name: "Project Manager Backend",
+    name: "Project Manager",
     technologies: [
       ".NET 8",
       "ASP.NET Core",
       "Entity Framework Core",
       "PostgreSQL",
+      "Typescript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "DaisyUI",
       "JWT",
-      "Swagger/OpenAPI",
-      "Clean Architecture",
+      "Swagger",
+      "xUnit",
     ],
     githubUrl: "https://github.com/juandaalean/projectmanagerbackend",
     liveApiUrl: "https://github.com/juandaalean/projectmanagerbackend#quickstart",
   },
   georoad: {
     name: "GeoRoad",
-    technologies: ["PyQt5", "Python", "FastAPI", "NumPy", "Matplotlib", "Plotly"],
+    technologies: ["Python", "PyQt5", "Streamlit", "NumPy", "Matplotlib", "Plotly"],
   },
   avila: {
     name: "Avila Digital",
-    technologies: ["Kotlin", "Room", "Firebase", "Google Maps API", "Retrofit"],
+    technologies: ["Kotlin", "Room", "Retrofit", "Firebase", "Google Maps API"],
   },
 };
 
@@ -123,7 +128,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.projectManager.name,
           shortDescription:
-            "API REST construida con .NET 8 para gestionar proyectos, tareas y comentarios en un entorno colaborativo, inspirada en flujos tipo Trello/Jira.",
+            "Aplicación web integral (SaaS) diseñada para la gestión optimizada de flujos de trabajo basados en metodologías Agile. El sistema destaca por una arquitectura desacoplada y una innovadora integración de Inteligencia Artificial en el cliente para la automatización de procesos.",
           technologies: sharedProjects.projectManager.technologies,
           problemSolved:
             "Va más allá de un CRUD básico, al implementar reglas de autorización reales por membresía y propiedad del proyecto, junto con una arquitectura escalable y mantenible para productos backend en crecimiento.",
@@ -135,7 +140,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.georoad.name,
           shortDescription:
-            "Aplicación de escritorio enfocada en simulación, análisis y recomendaciones de sistemas geotérmicos enterrados en el pavimento. He sido participe de este proyecto desde su concepción, colaborando en el diseño de la arquitectura (Model - View - Presenter), Strategy pattern entre otras decisiones técnicas, desarrollo de la API con FastAPI y la integración con la aplicación de escritorio usando PyQt5.",
+            "Realice el desarrollo integral de una herramienta técnica para la optimización de sistemas geotérmicos en pavimentos a nivel de ingeniería de software y diseño. Diseñé una arquitectura robusta basada en MVP y Strategy Pattern con PyQt5, logrando desacoplar la lógica de cálculo compleja de la interfaz de usuario. Además, expandí el alcance del proyecto al entorno web mediante un dashboard analítico en Streamlit.",
           technologies: sharedProjects.georoad.technologies,
           problemSolved:
             "Centraliza cálculos, validaciones y sistema de recomendación según entorno de diferentes modelos geotérmicos en una herramienta mantenible, reduciendo tiempos de análisis manual y mejorando la trazabilidad técnica del proceso mostrando gráficas renderizadas de resultados en 2D y 3D.",
@@ -197,7 +202,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.projectManager.name,
           shortDescription:
-            "REST API built with .NET 8 to manage projects, tasks, and comments in a collaborative environment inspired by Trello/Jira workflows.",
+            "A comprehensive web application (SaaS) designed for optimized workflow management based on Agile methodologies. The system stands out for its decoupled architecture and innovative client-side AI integration for process automation.",
           technologies: sharedProjects.projectManager.technologies,
           problemSolved:
             "It goes beyond basic CRUD by implementing real authorization rules based on membership and project ownership, with a scalable and maintainable architecture for growing backend products.",
@@ -208,7 +213,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.georoad.name,
           shortDescription:
-            "Desktop application focused on simulation, analysis, and recommendation of geothermal systems embedded in pavement. I have been involved in this project since its inception, collaborating on the design of the architecture (Model - View - Presenter), Strategy pattern among other technical decisions, development of the API with FastAPI and integration with the desktop application using PyQt5.",
+            "I developed the comprehensive development of a technical tool for optimizing geothermal systems in pavements, from software engineering to design. I designed a robust architecture based on MVP and Strategy Patterns using PyQt5, successfully decoupling the complex calculation logic from the user interface. Furthermore, I expanded the project's scope to the web environment through an analytical dashboard in Streamlit.",
           technologies: sharedProjects.georoad.technologies,
           problemSolved:
             "It centralizes calculations, validations, and recommendation logic for different geothermal models in a maintainable tool, reducing manual analysis time and improving technical traceability with rendered 2D and 3D result charts.",
