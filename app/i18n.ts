@@ -128,10 +128,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.projectManager.name,
           shortDescription:
-            "Aplicación web integral (SaaS) diseñada para la gestión optimizada de flujos de trabajo basados en metodologías Agile. El sistema destaca por una arquitectura desacoplada y una innovadora integración de Inteligencia Artificial en el cliente para la automatización de procesos.",
+            "Aplicación web fullstack (SaaS) diseñada para la gestión optimizada de flujos de trabajo basados en metodologías Agile. El sistema destaca por una arquitectura desacoplada y la integración de Inteligencia Artificial en el cliente para la automatización de procesos utilizando modelos WebLLM.",
           technologies: sharedProjects.projectManager.technologies,
           problemSolved:
-            "Va más allá de un CRUD básico, al implementar reglas de autorización reales por membresía y propiedad del proyecto, junto con una arquitectura escalable y mantenible para productos backend en crecimiento.",
+            "Proporciona una solución integral para gestionar y optimizar los flujos de trabajo de forma escalable y mantenible, aprovechando el poder de la IA para la automatización de procesos en la gestión de tareas.",
           githubUrl: sharedProjects.projectManager.githubUrl,
           liveApiUrl: sharedProjects.projectManager.liveApiUrl,
           apiStatus:
@@ -202,10 +202,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           name: sharedProjects.projectManager.name,
           shortDescription:
-            "A comprehensive web application (SaaS) designed for optimized workflow management based on Agile methodologies. The system stands out for its decoupled architecture and innovative client-side AI integration for process automation.",
+            "A full-stack web application (SaaS) designed for optimized workflow management based on Agile methodologies. The system stands out for its decoupled architecture and the integration of Artificial Intelligence on the client side for process automation using WebLLM models.",
           technologies: sharedProjects.projectManager.technologies,
           problemSolved:
-            "It goes beyond basic CRUD by implementing real authorization rules based on membership and project ownership, with a scalable and maintainable architecture for growing backend products.",
+            "It provides a comprehensive solution for managing and optimizing workflows in a scalable and maintainable way, leveraging the power of AI for process automation in task management.",
           githubUrl: sharedProjects.projectManager.githubUrl,
           liveApiUrl: sharedProjects.projectManager.liveApiUrl,
           apiStatus: "API in deployment: currently available locally with Swagger (see Quickstart).",
