@@ -24,7 +24,7 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
   const pathname = usePathname();
 
   return (
-    <nav aria-label="Language selector" className="inline-flex rounded-full border border-[#c8d8d5] bg-white p-1 shadow-sm">
+    <nav aria-label="Language selector" className="theme-surface inline-flex rounded-full border border-[color:var(--border-strong)] bg-[color:var(--surface)] p-1 shadow-sm">
       {locales.map((localeOption) => {
         const isActive = localeOption === currentLocale;
 

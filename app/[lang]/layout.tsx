@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
+import { ThemeSwitcher } from "../components/ThemeSwitcher";
 import { dictionaries, isValidLocale, locales } from "../i18n";
 
 type LocaleLayoutProps = {
@@ -54,8 +55,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <>
       <header className="mx-auto w-full max-w-5xl px-5 pt-5 sm:px-6">
-        <div className="flex justify-end">
+        <div className="flex items-center justify-end gap-3">
           <LanguageSwitcher currentLocale={lang} />
+          <ThemeSwitcher />
         </div>
       </header>
       {children}

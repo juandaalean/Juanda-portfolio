@@ -13,10 +13,12 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600"],
 });
 
+const themeInitScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.remove('dark');document.documentElement.style.colorScheme='light';}}catch(e){}})();`;
+
 export const metadata: Metadata = {
   title: "Portfolio Backend | Juan David Alean Medina",
   description:
-    "Portfolio profesional de desarrollador backend con proyectos, APIs en vivo y stack técnico.",
+    "Portfolio profesional de programador backend con proyectos, experiencia y stack técnico.",
 };
 
 export default function RootLayout({
@@ -27,8 +29,12 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} dark h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

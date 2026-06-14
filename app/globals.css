@@ -1,31 +1,74 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #f8faf9;
   --foreground: #10201e;
   --surface: #ffffff;
+  --surface-2: #f9fbfb;
   --accent: #25b6aa;
   --accent-2: #ea580c;
   --muted: #5d6f6d;
+  --border: #d9e4e2;
+  --border-strong: #c8d8d5;
+  --chip-border: #d7e6e3;
+  --card-shadow: rgba(12, 57, 52, 0.08);
+  --gradient-1: #d1fae5;
+  --gradient-2: #ffedd5;
+  --photo-border: #cde4df;
+  --photo-from: #99f6e4;
+  --photo-to: #fed7aa;
+  --photo-inner-bg: #ffffff;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #0b1211;
+  --foreground: #e6efed;
+  --surface: #131c1a;
+  --surface-2: #1a2523;
+  --accent: #26a695;
+  --accent-2: #fb923c;
+  --muted: #8a9c9a;
+  --border: #243633;
+  --border-strong: #2d3d3a;
+  --chip-border: #2d3d3a;
+  --card-shadow: rgba(0, 0, 0, 0.4);
+  --gradient-1: #0a1f1a;
+  --gradient-2: #1f1208;
+  --photo-border: #2d3d3a;
+  --photo-from: #134e4a;
+  --photo-to: #7c2d12;
+  --photo-inner-bg: #131c1a;
+  color-scheme: dark;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
   --font-sans: var(--font-space-grotesk);
   --font-mono: var(--font-ibm-plex-mono);
 }
 
 body {
   background:
-    radial-gradient(circle at 0% 0%, #d1fae5 0, transparent 60%),
-    radial-gradient(circle at 100% 0%, #ffedd5 0, transparent 55%),
+    radial-gradient(circle at 0% 0%, var(--gradient-1) 0, transparent 60%),
+    radial-gradient(circle at 100% 0%, var(--gradient-2) 0, transparent 55%),
     var(--background);
   background-repeat: no-repeat;
   background-size: 120% 1200px, 120% 1200px, auto;
   background-position: left top, right top, center;
   color: var(--foreground);
   font-family: var(--font-space-grotesk), sans-serif;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 a {
@@ -34,7 +77,19 @@ a {
 
 .card {
   background: var(--surface);
-  border: 1px solid #d9e4e2;
+  border: 1px solid var(--border);
   border-radius: 1rem;
-  box-shadow: 0 12px 30px rgba(12, 57, 52, 0.08);
+  box-shadow: 0 12px 30px var(--card-shadow);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.theme-surface,
+.theme-border {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
 }
